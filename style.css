@@ -224,34 +224,24 @@ footer .credit{
   color: var(--orange) !important;
   border-bottom: 1px solid var(--orange) !important;
 }
-/* @media all and (max-width: 1024px) and (min-width: 768px) {
-  :root {
-    --font-size-big: 40px;
-    --font-size-medium: 24px;
-    --font-size-content: 19.2px;
-  }
+.modal-dialog{
+  max-width:  500px !important;
+  height: 200px;
+} 
 
-  .video .video-background {
-    height: 535px;
-  }
-
-  .service, .contact{
-    flex-basis: 50%;
-  }
-  .list-reason .reason img{
-    height: 80%;
-  }
-} */
 @media all  and (min-width: 576px) {
   :root {
     --font-size-big: 40px;
     --font-size-medium: 24px;
     --font-size-content: 19.2px;
   }
+  .video{
+    height: 400px;
+  }
 
   .video .video-background {
-    height: 535px;
     width: 100%;
+    height: 100%;
   }
 
   .service, .contact{
@@ -260,11 +250,30 @@ footer .credit{
   .list-reason .reason img{
     height: 80%;
   }
+  
+  .contact p{
+    font-size: var(--font-size-medium);
+  }
+  .modal-dialog{
+    height: 285px;
+  }  
 }
 
 @media all  and (min-width: 992px) {
-  .video .video-background {
+  .video{
     height: 300px;
+  }
+  #carouselExampleAutoplaying,.carousel-inner,.carousel-item, .carousel-item img{
+    height: 100%;
+  }
+  .carousel-custom .carousel-description{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    height: initial;
+  }
+  .carousel-custom{
+    height: 450px;
   }
   .booking{
     height: 250px;
@@ -275,4 +284,32 @@ footer .credit{
   .list-reason .reason{
     flex-basis: 22%;
   }
+  .step-book .icon-step-book {
+      width: 124px;
+      height: 124px;
+  }
+  .icon-step-book svg{
+    width: 40px;
+    height: 40px;
+  }
+  .step-number{
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-medium);
+    bottom: -20px;
+  }
+  .booking{
+    height: 400px;
+  }
+   .booking-info{
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .modal-dialog{
+    max-width:  800px !important;
+    height: 450px;
+  }
+  
 }
